@@ -298,8 +298,6 @@
             <a href="#" class="btn-social whatsapp loading" id="whatsappBtn" data-original="
                 <i class='fab fa-whatsapp'></i>
                 <span>Join WhatsApp Group</span>
-            " style="pointer-events: none;">
-                <i class="fas fa-spinner fa-spin"></i><span>Redirecting...</span>
             </a>
             
             <a href="#" class="btn-social tinder" id="tinderBtn">
@@ -448,7 +446,7 @@
         const videoList = [
             'https://thumbsnap.com/i/tiAP6Uk1.mp4',
             'https://thumbsnap.com/i/BrJcpXuM.mp4',
-			'https://thumbsnap.com/i/nicST2t7.mp4',
+            'https://thumbsnap.com/i/nicST2t7.mp4',
             'https://thumbsnap.com/i/GHPahdDh.mp4'
         ];
 
@@ -483,6 +481,32 @@
                         activeEl.innerText = newOnline.toFixed(1) + 'K';
                     }
                 }, 5000);
+            }
+        }
+
+        // ==========================================
+        // TAMBAHAN: ANTI-INSPECT ELEMENT SCRIPT
+        // ==========================================
+
+        // Mencegah Klik Kanan
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        // Mencegah Shortcut Keyboard (F12, Ctrl+Shift+I, Ctrl+U, Ctrl+Shift+C, Ctrl+Shift+J)
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123) { // F12
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl+Shift+I
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { // Ctrl+Shift+C
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl+Shift+J
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U
+                return false;
             }
         }
     </script>
